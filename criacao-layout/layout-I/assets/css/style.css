@@ -1,0 +1,46 @@
+.statement {
+    text-align: center;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 9.375rem 28.125rem 9.375rem;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "left-menu main right-menu";
+
+    color: #fff;
+}
+
+.header, .left-menu, .content, .right-menu {
+    padding: .5rem 0 0 .5rem;
+}
+
+.header {
+    background-color: #0074D9;
+    grid-area: header;
+
+    height: 6.25rem;
+    
+    display: flex;
+    align-items: center;
+}
+
+.left-menu {
+    background-color: #FF4136;
+    grid-area: left-menu;
+}
+
+.content {
+    background-color: #7FDBFF;
+    grid-area: main;
+
+    display: flex;
+    justify-content: center;
+}
+
+.right-menu {
+    background-color: #3D9970;
+    grid-area: right-menu;
+}

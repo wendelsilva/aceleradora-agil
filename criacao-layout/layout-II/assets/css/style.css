@@ -1,0 +1,126 @@
+.statement {
+    text-align: center;
+}
+
+.layout {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "navbar navbar navbar"
+    "side-menu main right-menu"
+    "footer footer footer";
+
+    color: #fff;
+}
+
+header, aside, nav, main, footer {
+    padding: .5rem;
+
+    display: flex;
+}
+
+aside, main {
+    background-color: var(--gray-color);
+}
+
+.header {
+    background-color: var(--blue-color);
+    grid-area: header;
+
+    height: 6.25rem;
+
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.navbar {
+    background-color: var(--red-color);
+    grid-area: navbar;
+
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    gap: .75rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: var(--blue-color);
+}
+
+.side-menu {
+    grid-area: side-menu;
+    border-right: 2px var(--red-color) dashed;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.side-menu ul li a:hover {
+    text-decoration: underline;
+    color: var(--blue-color);
+}
+
+.main {
+    grid-area: main;
+    border-right: 2px var(--red-color) dashed;
+
+    flex-direction: column;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.main form input,
+.main form textarea {
+    border-radius: .25rem;
+    padding: .5rem;
+    border: 1px solid #fcfcfc;
+}
+
+.main form div {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.main form button {
+    padding: .5rem;
+    background-color: var(--blue-color);
+    border-radius: .25rem;
+    border: 1px solid var(--blue-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.main form button:hover {
+    opacity: .80;
+    transition: ease-in-out;
+}
+
+.right-menu {
+    grid-area: right-menu;
+}
+
+.footer {
+    background-color: var(--blue-color);
+    grid-area: footer;
+
+    justify-content: center;
+}

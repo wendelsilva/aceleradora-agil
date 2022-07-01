@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Wendel Silva | Desafio</title>
+</head>
+<body>
+    <h1>
+        Desafio
+    </h1>
+    <p>
+        Elabore um programa que solicita o nome, nota do primeiro semestre, nota do segundo semestre frequência (em %) de um número indeterminado de alunos. Após cada conjunto de valores informados deverá ser apresentada uma mensagem para o usuário, perguntando se ele deseja continuar informando dados. Após usuário terminar de informar os dados dos alunos, o programa deverá imprimir uma tabela,
+    </p>
+    <table>
+        <tr>
+            <th></th>
+            <th>Nome</th>
+            <th>1° Semestre</th>
+            <th>2° Semestre</th>
+            <th>Nota Final</th>
+            <th>Frequência</th>
+        </tr>
+        <tr>
+        </tr>
+    </table>
+
+    <form class="ocult">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Insira o nome do aluno">
+
+        <label for="first-semester">1° Semestre</label>
+        <input type="number" id="first-semester" name="first-semester" min="0" max="10" placeholder="Insira a nota do 1° semestre">
+
+        <label for="second-semester">2° Semestre</label>
+        <input type="number" id="second-semester" name="second-semester" min="0" max="10" placeholder="Insira a nota do 2° semestre">
+        
+        <label for="frequency">Frequência(em %)</label>
+        <input type="number" id="frequency" name="frequency" min="0" max="100" placeholder="Insira a frequência do aluno em porcentagem">
+
+        <button type="reset" onclick="handleBuildTable()">Enviar</button>
+    </form>
+
+    <div class="modal ocult">
+        <p>Deseja Continuar?</p>
+        <span>deseja continuar inserindo alunos</span>
+        <div class="buttons">
+            <button onclick="showForm()">Sim</button>
+            <button onclick="hideModal()">Não</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

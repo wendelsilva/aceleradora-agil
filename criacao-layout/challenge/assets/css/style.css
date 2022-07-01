@@ -1,0 +1,93 @@
+table, th, td {
+    border: 2px solid var(--black-color);
+    border-collapse: collapse;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.reproved {
+    background-color: var(--red-color);
+}
+
+.approved {
+    background-color: var(--green-color);
+}
+
+th {
+    background-color: var(--orange-color);
+    padding: .5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    background-color: var(--black-color);
+    padding: 1rem;
+    border-radius: .5rem;
+    color: var(--white-color);
+    width: 20rem;
+}
+
+form input {
+    border: 1px solid var(--white-color);
+    border-radius: .25rem;
+    padding: .25rem;
+}
+
+form button {
+    padding: .25rem 0;
+    border-radius: .25rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+
+form button:hover {
+    opacity: .80;
+    transition: ease-in-out;
+}
+
+.modal {
+    background-color: var(--black-color);
+    color: var(--white-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.modal .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 90%;
+}
+
+.modal .buttons button {
+    width: 100%;
+    padding: .25rem .5rem;
+    background-color: var(--green-color);
+    border-radius: .25rem;
+    border: none;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.modal .buttons button ~ button {
+    background-color: var(--red-color);
+}
+
+.modal .buttons button:hover {
+    opacity: .80;
+    transition: ease-in-out;
+}
+
+.ocult {
+    display: none;
+}

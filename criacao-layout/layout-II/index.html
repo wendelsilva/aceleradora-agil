@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Wendel Silva | Criação de Layout</title>
+</head>
+<body>
+    <div class="statement">
+        <h1>Enunciado</h1>
+        <p> ° Crie um layout composto por cabeçalho, menu superior, 3 colunas (navegação, conteúdo, e área de
+            apoio) com um rodapé após essas três colunas
+            <br>
+            ° Adicione um menu lateral na página.
+            <br>
+            ° Na área principal, insira um formulário de contato.
+            <br>
+            ° Busque formas de fazer um menu usando essa mesma estrutura, porém com ele se apresentando com itens horizontais na tela.
+        </p>
+    </div>
+    
+    <div class="layout">
+        <header class="header">TOPO</header>
+        <nav class="navbar">
+           <p>
+                Menu Principal
+            </p>
+            <ul>
+                <li>
+                    <a href="#">
+                        Link1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link2
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link3
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link4
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link5
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="side-menu">
+            <p>
+                COLUNA DE NAVEGAÇÃO
+            </p>
+            <ul>
+                <li>
+                    <a href="#">
+                        Link1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link2
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link3
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link4
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link5
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main">
+            <p>
+                COLUNA PRINCIPAL
+            </p>
+            <form method="POST" action="mailto:teste@teste.com">
+                <label for="name">Nome</label>
+                <input type="text" name="name" placeholder="Insira seu nome completo">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Insira seu endereço de email">
+
+                <label for="telephone">Telefone</label>
+                <input type="tel" name="telephone" placeholder="Insira seu telefone">
+
+                <label for="message">Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Insira sua mensagem"></textarea>
+
+                <div>
+                    <input type="checkbox" name="checkbox">
+                    <span for="checkbox">concordo com os <a href="#">termos e condições</a></span>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+        <aside class="right-menu">COLUNA DE APOIO</aside>
+        <footer class="footer">...RODAPE...</footer>
+    </div>
+</body>
+</html>
