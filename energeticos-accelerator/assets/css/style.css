@@ -1,0 +1,68 @@
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+main form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+    max-width: 45rem;
+    width: 100%;
+}
+
+main form input {
+    border: 1px solid var(--gray-color);
+    border-radius: .5rem;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.button {
+    align-self: center;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid var(--yellow-color);
+    font-size: 1.2rem;
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    margin-top: 2rem;
+    width: 50%;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .80;
+    transition: ease-in-out;
+}
+
+main .report {
+    border-radius: .5rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+main .report span {
+    font-weight: bold;
+}
+
+main .report p {
+    text-transform: capitalize;
+}
+
+main .report .data {
+    border-bottom: 1px solid var(--gray-color);
+    margin: .5rem;
+}
+
+.ocult {
+    display: none;
+}
