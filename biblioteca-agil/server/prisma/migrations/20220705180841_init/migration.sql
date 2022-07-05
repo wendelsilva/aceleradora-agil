@@ -17,4 +17,7 @@ CREATE TABLE "Book" (
 );
 
 -- CreateIndex
+CREATE UNIQUE INDEX "User_name_key" ON "User"("name");
+
+-- CreateIndex
 CREATE UNIQUE INDEX "Book_code_key" ON "Book"("code");

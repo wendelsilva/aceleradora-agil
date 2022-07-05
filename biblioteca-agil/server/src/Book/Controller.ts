@@ -22,7 +22,7 @@ routes.get("/book/withdraw", (req, res) => {
                     userId: userId,
                 }
             }).then(() => {
-                res.status(201).send()
+                res.status(200).send()
             })
         } else {
            res.status(503).send() 
@@ -52,7 +52,7 @@ routes.post("/book/giveback", (req, res) => {
                     userId: null,
                 }
             }).then(() => {
-                res.status(201).send()
+                res.status(200).send()
             })
         } else {
             res.status(503).send() 
