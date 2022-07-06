@@ -40,4 +40,7 @@ npx prisma studio
     - [ ] Logar usuário -> /user/login
     - [ ] Criar usuário -> /user/create
 
-O projeto não pode ser concluído devido ao tempo porém a ideia seria uma aplicação frontend e backend de biblioteca ágil web. O backend do projeto ficou pronto com as rotas e a modelagem do banco de dados sendo assim totalmente funcional independente do frontend. Seguindo os passos acima o backend estará rodando e pronto para receber as requisições em suas rotas.
+### Ferramentas
+- [ ] Insomnia para fazer as requisições para as rotas
+
+O projeto não pode ser concluído por completo devido ao tempo porém a ideia seria uma aplicação frontend react e backend node de biblioteca ágil web. O backend do projeto ficou pronto com as rotas e a modelagem do banco de dados sendo assim totalmente funcional independente do frontend. Seguindo os passos acima o backend estará rodando e pronto para receber as requisições em suas rotas.
