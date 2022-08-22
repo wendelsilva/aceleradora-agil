@@ -1,2 +1,2 @@
 # aceleradora-agil
-repository created to submit 2° step projects challenges
+repository criado para entrega dos desafios da etapa técnica do processo seletivo aceleradora ágil
